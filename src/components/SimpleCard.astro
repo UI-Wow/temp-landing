@@ -1,0 +1,43 @@
+---
+const { title, description } = Astro.props;
+---
+
+<div class="card">
+    {title && <h2>{title}</h2>}
+    {description && <p>{description}</p>}
+</div>
+
+<style>
+    .card {
+        padding: 16px;
+        background: rgba(255, 255, 255, 1);
+        border-radius: 16px;
+        border: 1px solid white;
+    }
+
+    .card {
+       
+        text-decoration: none;
+        transition: background 0.2s;
+        backdrop-filter: blur(50px);
+    }
+
+    .card:hover {
+        background: rgba(255, 255, 255, 0.55);
+    }
+
+    h2 {
+        margin: 0 0 1em;
+        font-weight: normal;
+        color: #111827;
+        font-size: 20px;
+    }
+
+    p {
+        color: #4b5563;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.006em;
+        margin: 0;
+    }
+</style>

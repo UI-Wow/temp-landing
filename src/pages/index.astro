@@ -1,11 +1,107 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import Layout from "../layouts/Layout.astro";
+import Background from "../components/Background.astro";
 ---
 
-<Layout>
-	<Welcome />
+<!-- <Background /> -->
+<Layout>    
+  <!-- Hero Section -->
+  <section class="text-center py-20 bg-gradient-to-b from-[#f0f4f8] to-white"
+     style="
+    background-image: radial-gradient(circle, #ccc 2px, transparent 2px);
+    background-size: 30px 30px;
+    "
+>
+    <h1 class="text-5xl font-bold mb-4">UI-WOW</h1>
+    <p class="text-xl max-w-xl mx-auto mb-6">Build web applications intuitively.</p>
+    <div class="space-x-4">
+      <!-- <a href="#features" class="bg-black text-white px-6 py-2 rounded-full">Explore Features</a>
+      <a href="#values" class="bg-gray-200 text-black px-6 py-2 rounded-full">Our Values</a> -->
+      <a href="mailto:contact@ui-wow.com?subject=Join%20UI-WOW%20waitlist&body=Hi%2C%20I%20would%20like%20to%20be%20an%20early%20explorer%20of%20UI-WOW%20🧑‍🚀" class="bg-black text-white px-6 py-2 rounded-full">Join the waitlist</a>
+    </div>
+  </section>
+
+  <!-- Value Proposition -->
+  <section class="py-16 px-6 max-w-5xl mx-auto text-center">
+    <h2 class="text-3xl font-semibold mb-4">Why UI-WOW?</h2>
+    <p class="text-lg text-gray-700">Build secure, scalable, and cost-effective apps while learning best practices. If you're a beginner, we'll guide you every step of the way.</p>
+  </section>
+
+  <!-- Features Grid -->
+  <section id="features" class="py-20 bg-gray-50">
+    <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-3 gap-8">
+      <div class="bg-white p-6 rounded-xl shadow">
+        <h3 class="font-semibold text-xl mb-2">Pre-designed Components</h3>
+        <p>Ready-to-use, responsive UI blocks.</p>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow">
+        <h3 class="font-semibold text-xl mb-2">No-code or Code</h3>
+        <p>Use the visual builder or bring your own components in React, Vue, Svelte, or Solid.</p>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow">
+        <h3 class="font-semibold text-xl mb-2">Drag & Drop Canvas</h3>
+        <p>Quickly and intuitively build your app’s interface.</p>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow">
+        <h3 class="font-semibold text-xl mb-2">Visual Logic</h3>
+        <p>Connect databases, workflows via N8N, and useful external services.</p>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow">
+        <h3 class="font-semibold text-xl mb-2">Internal Logic</h3>
+        <p class="flex flex-col gap-1">
+          Expand your app internal logic using TypeScript, Python, Ruby, Java, Go, C#, Rust.
+        </p>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow">
+        <h3 class="font-semibold text-xl mb-2">Live Preview</h3>
+        <p>See exactly what your users will experience — before and after deploying.</p>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow">
+        <h3 class="font-semibold text-xl mb-2">Collaborative Control</h3>
+        <p>Let your team work on specific sections with full change traceability.</p>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow">
+        <h3 class="font-semibold text-xl mb-2">Automated Testing</h3>
+        <p>We help you test logic and components to ensure everything works as expected.</p>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow">
+        <h3 class="font-semibold text-xl mb-2">Easy A/B Testing</h3>
+        <p>Deploy different versions to selected users and measure results easily.</p>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow">
+        <h3 class="font-semibold text-xl mb-2">AI Assisted</h3>
+        <p>Get smart suggestions and automate repetitive tasks with AI.</p>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow">
+        <h3 class="font-semibold text-xl mb-2">Total Visibility</h3>
+        <p>Track visits, performance, costs, and more in detail.</p>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow">
+        <h3 class="font-semibold text-xl mb-2">Integrated Learning</h3>
+        <p>Keep improving while building, with guides and best practices.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Core Values -->
+  <section id="values" class="py-20 px-6 max-w-5xl mx-auto">
+    <h2 class="text-3xl font-semibold text-center mb-8">Our Core Values</h2>
+    <ul class="grid md:grid-cols-2 gap-6 text-lg text-gray-800">
+      <li>✅ You’re always in control</li>
+      <li>🔐 Security and testing by default</li>
+      <li>📦 Partially open-source (like N8N)</li>
+      <li>💸 Pay only for what you use</li>
+      <li>⚡ Instant updates and previews</li>
+      <li>📊 Detailed performance & cost metrics</li>
+      <li>📤 Exportable code to self-host</li>
+      <li>🧩 Total flexibility to integrate your favorite tools</li>
+    </ul>
+  </section>
+
+  <!-- CTA Footer -->
+  <footer class="text-center py-12 bg-black text-white">
+    <h2 class="text-2xl font-semibold mb-2">Start building with UI-WOW</h2>
+    <p class="mb-4">Pay $0 until you have users. Scale as you grow.</p>
+    <a href="mailto:contact@ui-wow.com" class="bg-white text-black px-6 py-3 rounded-full">Join the waitlist</a>
+  </footer>
 </Layout>
