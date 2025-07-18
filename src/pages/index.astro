@@ -15,9 +15,9 @@ import Background from "../components/Background.astro";
     <h1 class="text-5xl font-bold mb-4">UI-WOW</h1>
     <p class="text-xl max-w-xl mx-auto mb-6">Build web applications intuitively.</p>
     <div class="space-x-4">
-      <!-- <a href="#features" class="bg-black text-white px-6 py-2 rounded-full">Explore Features</a>
-      <a href="#values" class="bg-gray-200 text-black px-6 py-2 rounded-full">Our Values</a> -->
-      <a href="mailto:contact@ui-wow.com?subject=Join%20UI-WOW%20waitlist&body=Hi%2C%20I%20would%20like%20to%20be%20an%20early%20explorer%20of%20UI-WOW%20🧑‍🚀" class="bg-black text-white px-6 py-2 rounded-full">Join the waitlist</a>
+      <a href="#features" class="bg-black text-white px-6 py-2 rounded-full">Explore Features</a>
+      <a href="#values" class="bg-gray-200 text-black px-6 py-2 rounded-full">Our Values</a>
+      <!-- <a href="mailto:contact@ui-wow.com?subject=Join%20UI-WOW%20waitlist&body=Hi%2C%20I%20would%20like%20to%20be%20an%20early%20explorer%20of%20UI-WOW%20🧑‍🚀" class="bg-black text-white px-6 py-2 rounded-full">Join the waitlist</a> -->
     </div>
   </section>
 
@@ -99,9 +99,24 @@ import Background from "../components/Background.astro";
   </section>
 
   <!-- CTA Footer -->
-  <footer class="text-center py-12 bg-black text-white">
+<!-- CTA Footer -->
+<footer class="text-center py-12 bg-black text-white">
     <h2 class="text-2xl font-semibold mb-2">Start building with UI-WOW</h2>
-    <p class="mb-4">Pay $0 until you have users. Scale as you grow.</p>
-    <a href="mailto:contact@ui-wow.com" class="bg-white text-black px-6 py-3 rounded-full">Join the waitlist</a>
+    <p class="mb-4">Pay $0 while you have no users. Scale as you grow.</p>
+    <a 
+    href="mailto:contact@ui-wow.com?subject=Join%20UI-WOW%20waitlist&body=Hi%2C%20I%20would%20like%20to%20be%20an%20early%20explorer%20of%20UI-WOW%20🧑‍🚀" 
+      class="bg-white text-black px-6 py-3 rounded-full inline-block"
+    >
+      Join the waitlist
+    </a>
+    <p class="mt-6 text-sm text-gray-400 max-w-xl mx-auto">
+      If the button doesn’t work, please send an email to: 
+      <span class="underline text-white">contact@ui-wow.com</span> with the subject 
+      <span class="italic">"Join UI-WOW waitlist"</span>.
+    </p>
+    <hr class="my-6 border-gray-600 max-w-xs mx-auto" />
+    <p class="text-xs text-gray-500">© UI-WOW. All rights reserved.</p>
   </footer>
+  
+  
 </Layout>
